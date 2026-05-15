@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview of Moles - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐹 Overview of Moles</h1>
+            <p class="subtitle">Learn about moles while playing!</p>
+        </header>
+
+        <div class="game-info">
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-label">Score:</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time:</span>
+                    <span class="stat-value" id="timer">30</span>s
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Combo:</span>
+                    <span class="stat-value" id="combo">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <!-- Mole holes will be generated here -->
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+            <button id="resetBtn" class="btn btn-secondary" disabled>Reset</button>
+        </div>
+
+        <div class="fact-box" id="factBox">
+            <h3>🐾 Fun Fact About Moles</h3>
+            <p id="factText">Click start to begin and learn about moles!</p>
+        </div>
+
+        <div class="game-over" id="gameOverScreen" style="display:none;">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p class="final-score">Final Score: <span id="finalScore">0</span></p>
+                <p class="final-combo">Best Combo: <span id="finalCombo">0</span></p>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
